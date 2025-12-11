@@ -1,0 +1,24 @@
+#include <Adafruit_CircuitPlayground.h>
+
+
+
+void setup() {
+  Serial.begin(9600);
+  CircuitPlayground.begin();
+}
+
+void loop() {
+  float X = CircuitPlayground.motionX();
+  
+  //Y = CircuitPlayground.motionY();
+  //Z = CircuitPlayground.motionZ();
+
+  //Serial.print("X: ");
+  Serial.println(X);
+  //Serial.print("  Y: ");
+  //Serial.print(Y);
+  //Serial.print("  Z: ");
+  //Serial.println(Z);
+
+  delay(1000);
+}
